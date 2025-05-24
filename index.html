@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeffrey East</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="landing" class="scene">
+    <img src="assets/background-landing.png" id="background" usemap="#hotspots" />
+    <map name="hotspots">
+      <area shape="circle" coords="900,160,80" href="https://www.patreon.com/jeffreyeast" alt="Patreon" />
+      <area shape="rect" coords="600,500,1000,620" href="#" onclick="enterTruck(event)" alt="Truck" />
+    </map>
+    <audio id="ignitionSound" src="assets/ignition.mp3"></audio>
+  </div>
+
+  <div id="interior" class="scene hidden">
+    <img src="assets/truck-interior.png" id="interiorImg"/>
+    <div class="radio">
+      <div id="songTitle" class="radio-display">Powering on...</div>
+      <div class="radio-buttons">
+        <button id="prev">⏮</button>
+        <button id="playPause">▶️</button>
+        <button id="next">⏭</button>
+      </div>
+    </div>
+    <a href="https://www.patreon.com/jeffreyeast" target="_blank" class="patreon-sticker">Support Jeffrey East on Patreon</a>
+  </div>
+
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
