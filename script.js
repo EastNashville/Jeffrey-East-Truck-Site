@@ -19,7 +19,7 @@ function enterTruck(event) {
       '?response_type=token' +
       '&client_id=81947f71c4eb490da5e79ce4c1a1b290' +
       '&scope=streaming%20user-read-email%20user-read-private%20user-modify-playback-state%20user-read-playback-state' +
-      '&redirect_uri=https://eastnashville.github.io/Jeffrey-East-Truck-Site';
+      '&redirect_uri=https://comfy-crepe-3c3781.netlify.app';
     return;
   }
 
